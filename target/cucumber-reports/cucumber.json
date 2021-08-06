@@ -1,0 +1,140 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 76600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "To Confirm the news is valid",
+        "description": "",
+        "id": "confirm-the-news-is-valid-by-searching-in-google;to-confirm-the-news-is-valid;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 83007699,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2410897300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Launch the application",
+            "match": {
+              "location": "Home_stepdefn.launch_The_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3272584499,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "navigate to \"News\" home page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "News",
+                  "offset": 13
+                }
+              ],
+              "location": "Home_stepdefn.navigate_To_Home_Page(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9360262000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I confirm the news \"silver\" by searching in google",
+            "match": {
+              "arguments": [
+                {
+                  "val": "silver",
+                  "offset": 20
+                }
+              ],
+              "location": "Home_stepdefn.i_Confirm_The_News_By_Searching_In_Google(String,DataTable)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "Laura Muir keeps faith and is rewarded with Olympic"
+                ],
+                "line": 17
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@smoke"
+          },
+          {
+            "line": 1,
+            "name": "@NewsValidation"
+          },
+          {
+            "line": 1,
+            "name": "@newsregression"
+          },
+          {
+            "line": 12,
+            "name": "@searchConfirmNews"
+          },
+          {
+            "line": 12,
+            "name": "@Checknews"
+          }
+        ]
+      }
+    ],
+    "name": "Confirm the news is valid by Searching in Google",
+    "description": "",
+    "id": "confirm-the-news-is-valid-by-searching-in-google",
+    "keyword": "Feature",
+    "uri": "features/confirmNews.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@NewsValidation"
+      },
+      {
+        "line": 1,
+        "name": "@smoke"
+      },
+      {
+        "line": 1,
+        "name": "@newsregression"
+      }
+    ]
+  }
+]
